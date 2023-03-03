@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aemgeeks/clientlibs"/>
+    <filter root="/apps/aemgeeks/components"/>
+    <filter root="/apps/aemgeeks/i18n"/>
+    <filter root="/apps/msm/aemgeeks_blueprint" mode="merge"/>
+</workspaceFilter>

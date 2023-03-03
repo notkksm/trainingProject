@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Bundle-Category: GEEKS
+Bundle-Description: Core bundle for GEEKS
+Bundle-ManifestVersion: 2
+Bundle-Name: GEEKS - Core
+Bundle-SymbolicName: aemgeeks.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Export-Package: com.aem.aemgeeks.core.filters;version="1.0";uses:="jav
+ ax.servlet",com.aem.aemgeeks.core.listeners;version="1.0";uses:="org.
+ apache.sling.api.resource.observation",com.aem.aemgeeks.core.models;v
+ ersion="1.0";uses:="javax.annotation,org.apache.sling.api.resource,or
+ g.apache.sling.models.annotations,org.apache.sling.models.annotations
+ .injectorspecific",com.aem.aemgeeks.core.schedulers;version="1.0",com
+ .aem.aemgeeks.core.servlets;version="1.0";uses:="javax.servlet,org.ap
+ ache.sling.api,org.apache.sling.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.aem.aemgeeks.core
+ .filters;version="[1.0,2)",com.aem.aemgeeks.core.listeners;version="[
+ 1.0,2)",com.aem.aemgeeks.core.schedulers;version="[1.0,2)",com.aem.ae
+ mgeeks.core.servlets;version="[1.0,2)",com.day.cq.wcm.api;version="[1
+ .27,2)",javax.servlet;version="[3.1,4)",org.apache.sling.api;version=
+ "[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apache.s
+ ling.api.resource;version="[2.11,3)",org.apache.sling.api.resource.ob
+ servation;version="[1.2,2)",org.apache.sling.api.servlets;version="[2
+ .3,3)",org.apache.sling.models.annotations;version="[1.5,2)",org.apac
+ he.sling.models.annotations.injectorspecific;version="[1.1,2)",org.sl
+ f4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.aem.aemgeeks.core.filters.LoggingFilte
+ r.xml,OSGI-INF/com.aem.aemgeeks.core.listeners.SimpleResourceListener
+ .xml,OSGI-INF/com.aem.aemgeeks.core.schedulers.SimpleScheduledTask.xm
+ l,OSGI-INF/com.aem.aemgeeks.core.servlets.SimpleServlet.xml
+Sling-Model-Classes: com.aem.aemgeeks.core.models.HelloWorldModel
+
