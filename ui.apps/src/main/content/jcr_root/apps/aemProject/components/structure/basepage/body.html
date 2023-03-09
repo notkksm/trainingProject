@@ -1,3 +1,8 @@
 <div>
-	<h1>base page body</h1>
+    <h1>base page body</h1>
 </div>
+<sly data-sly-use.model="com.aem.geeks.core.models.PaginationModel">
+    <div class='navigation'>
+        <sly data-sly-resource="${@path=model.path,selectors='content'}"></sly>
+    </div>
+</sly>
