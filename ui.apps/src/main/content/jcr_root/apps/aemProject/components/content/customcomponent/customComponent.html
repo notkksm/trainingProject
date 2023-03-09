@@ -3,4 +3,13 @@
 <h1 data-sly-test="${properties.textValue}">
     ${properties.textValue @ context='html'}
 </h1>
+<sly data-sly-use.model="com.aem.geeks.core.models.PaginationModel" >
+    <ol data-sly-list.link="${model.items}">
+        <li>
+            <a href="/editor.html${link.path}/structure.html">
+                template
+            </a>
+        </li>
+    </ol>
+</sly>
 
