@@ -1,0 +1,16 @@
+<div data-sly-use.figures="com.aem.geeks.core.models.AreaModel">
+    <div data-sly-list.item="${figures.bookDetailsWithMap}">
+         ---------------Figure-----------------
+        <p> type : <b>${item.type} </b></p>
+        <sly data-sly-test="${item.side}">
+            <p> side: : <b>${item.side}</b> </p>
+        </sly>
+        <sly data-sly-test="${item.secondside}">
+            <p> side : <b>${item.secondside}</b> </p>
+        </sly>
+        <sly data-sly-test="${item.radius}">
+            <p> radius : <b>${item.radius}</b> </p>
+        </sly>
+        <p> area : <b>${item.area}</b> </p>
+    </div>
+</div>
