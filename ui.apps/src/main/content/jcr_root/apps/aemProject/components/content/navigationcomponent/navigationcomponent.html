@@ -1,0 +1,11 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+    data-sly-call="${clientlib.css @ categories='aemProject'}"/>
+<div class="navigation" data-sly-use.items="com.aem.geeks.core.models.ImageLinkModel">
+    <a class="itemLink" href="${items.logoLink}"><img src="${items.logo}"></a>
+    <sly data-sly-use.links="com.aem.geeks.core.models.NavigationItemModel">
+        <sly data-sly-list.item="${links.linkDetailsWithMap}">
+            <a class="navLink" href="${item.link}">${item.title}</a>
+        </sly>
+    </sly>
+    <a class="itemLink" href="${items.sponsorLink}"><img src="${items.sponsor}"></a>
+</div>
