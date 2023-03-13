@@ -1,8 +1,7 @@
 <div>
     <h1>base page body</h1>
 </div>
-<sly data-sly-use.model="com.aem.geeks.core.models.PaginationModel">
-    <div class='navigation'>
-        <sly data-sly-resource="${@path=model.path}"></sly>
-    </div>
-</sly>
+<div class='navigation'>
+    <sly data-sly-resource="${'training-title' @ resourceType='core/wcm/components/experiencefragment/v1/experiencefragment'}"></sly>
+</div>
+
